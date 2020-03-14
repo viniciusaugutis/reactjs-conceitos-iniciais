@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <Fragment>
         <h1>Teste</h1>
-        <h2 className="testeClass" style={{ color: '#f00' }}>
+        <h2 className="testeClass" style={{ color: '0#f00' }}>
           Teste 2
         </h2>
         <Button onClick={this.handleClick}>Salvar</Button>

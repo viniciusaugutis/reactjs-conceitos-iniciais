@@ -27,25 +27,24 @@ yarn add prop-types: Biblioteca para utilizar para fazer tipagem dentro do códi
 
 yarn add -D @babel/plugin-proposal-class-properties: Instalar plugin do babel para deixar prop-types estáticos dentro das classes
 
-
 ## Estados e imutabilidade
 
 Estados: são todas variáveis que possam ser utilizadas pelo componente.
 O estado é sempre um objeto. Exemplo:
- state = {
-    counter: 0
-  };
+state = {
+counter: 0
+};
 
 Imutabilidade: sempre criar um novo valor da variável no estado ao invés de setar o valor dela.
 O estado é imutável.
 
-Podemos ter duas funções dentro da classe: 
+Podemos ter duas funções dentro da classe:
 
 handleClick(){} : this passa a se posicional para a função, ou seja, this.app ele vai procurar dentro do handleClick
 
 handleClick = () => {}: this se posiciona sempre para classe principal, ou seja, this.app ele vai procurar sempre na classe principal do componente e não na função criada. Com isso, no react sempre vamos usar por padrão como arrow funcion as funções
 
-__IMPORTANTE__: Toda vez que altero a propriedade ou estado de um componente a função render é executada novamente
+**IMPORTANTE**: Toda vez que altero a propriedade ou estado de um componente a função render é executada novamente
 
 Todo componente do react tem uma fila de alterações que tem que realizar dentro do estado.
 Conforme ele cresce isso pode ficar lento e a fila demorar para processar
@@ -60,12 +59,11 @@ Stateless: componentes sem estado
 Componentes stateless não da para fazer exports default, que o React não deixa. Deve fazer uma constante.
 Com isso componente fica com sintaxe de função
 
-
 ## CSS
 
 Javascript importa arquivo css no ReactJs
 
-yarn add -D style-loader css-loader 
+yarn add -D style-loader css-loader
 
 Com isso, webpack faz com que arquivo css seja lido dentro do componente e no arquivo .JS
 
@@ -80,3 +78,15 @@ No react não é utilizado a propriedade class e sim a className
 ## Boas práticas do React, EditorConfig e eslint
 
 Extensão do editorconfig e arquivo .editorconfig
+
+React Developer Tools: para debugar codigo
+
+yarn add eslint -D
+
+yarn add babel-eslint -D
+
+Após isso e criação do prettier, deve ir no settings do visual studio e colocar:
+
+"editor.formatOnSave": true. Para ele salvar e corrigir a identação e padrão do eslint sempre que salvar o arquivo
+
+npx eslint --init
