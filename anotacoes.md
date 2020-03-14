@@ -59,3 +59,6 @@ Stateless: componentes sem estado
 
 Componentes stateless não da para fazer exports default, que o React não deixa. Deve fazer uma constante.
 Com isso componente fica com sintaxe de função
+
+
+## Métodos do ciclo de vida do React
