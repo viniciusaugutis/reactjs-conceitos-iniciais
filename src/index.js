@@ -23,8 +23,11 @@ class App extends Component {
   };
 
   handleClick = () => {
-    this.setState({ counter: this.state.counter + 1 });
-    console.log(this.state.counter);
+    //callback para ja pegar state atualizado
+    this.setState({ counter: this.state.counter + 1 }, () => {
+      console.log(5 + this.state.counter);
+    })
+    /*this.setState(state => ({ counter: this.state.counter + 1 }));*/
     //this.state.counter++ nunca vai funcionar dentro do React. Sempre tem que usar o setState para alterar o valor de um estado dentro do componente
   };
 

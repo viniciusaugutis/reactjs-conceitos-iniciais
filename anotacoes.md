@@ -46,3 +46,6 @@ handleClick(){} : this passa a se posicional para a função, ou seja, this.app 
 handleClick = () => {}: this se posiciona sempre para classe principal, ou seja, this.app ele vai procurar sempre na classe principal do componente e não na função criada. Com isso, no react sempre vamos usar por padrão como arrow funcion as funções
 
 __IMPORTANTE__: Toda vez que altero a propriedade ou estado de um componente a função render é executada novamente
+
+Todo componente do react tem uma fila de alterações que tem que realizar dentro do estado.
+Conforme ele cresce isso pode ficar lento e a fila demorar para processar
