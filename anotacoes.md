@@ -22,3 +22,5 @@ No react não pode ter dois componentes sem ter uma div por fora
 
 Propriedades: informações que são passadas entre componentes (this.props.nomePropriedade)
 Children: Pega toda informação que está dentro do componente e repassa: (this.props.children)
+
+yarn add prop-types: Biblioteca para utilizar para fazer tipagem dentro do código, tipos que são etc.
