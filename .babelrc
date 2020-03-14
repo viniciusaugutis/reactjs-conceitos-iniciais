@@ -2,5 +2,8 @@
   "presets": [
     "@babel/preset-env", //transforma toda funcionalidade do javasript para que navegdor entenda
     "@babel/preset-react" //transforma toda funcionalidade do react para que navegdor entenda
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
   ]
 }

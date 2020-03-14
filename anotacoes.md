@@ -24,3 +24,5 @@ Propriedades: informações que são passadas entre componentes (this.props.nome
 Children: Pega toda informação que está dentro do componente e repassa: (this.props.children)
 
 yarn add prop-types: Biblioteca para utilizar para fazer tipagem dentro do código, tipos que são etc.
+
+yarn add -D @babel/plugin-proposal-class-properties: Instalar plugin do babel para deixar prop-types estáticos dentro das classes
