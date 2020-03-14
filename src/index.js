@@ -3,29 +3,30 @@ import { render } from 'react-dom';
 import PropTypes from 'prop-types';
 
 class Button extends Component {
-
   static defaultProps = {
     children: 'Salvar',
   };
-  
+
   static propTypes = {
     onClick: PropTypes.func.isRequired,
     children: PropTypes.string,
   };
 
   render() {
-    return (
-      <a href="" onClick={this.props.onClick}>
-        {this.props.children}
-      </a>
-    );
+    return <a onClick={this.props.onClick}>{this.props.children}</a>;
   }
 }
 
 class App extends Component {
-  handleClick() {
-    alert('Botão clicado');
-  }
+  state = {
+    counter: 0,
+  };
+
+  handleClick = () => {
+    this.setState({ counter: this.state.counter + 1 });
+    console.log(this.state.counter);
+    //this.state.counter++ nunca vai funcionar dentro do React. Sempre tem que usar o setState para alterar o valor de um estado dentro do componente
+  };
 
   render() {
     return (
