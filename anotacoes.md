@@ -74,3 +74,5 @@ css-loader faz isso.
 Com less usamos:
 
 yarn add -D sass-loader node-sass
+
+No react não é utilizado a propriedade class e sim a className
