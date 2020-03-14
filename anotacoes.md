@@ -49,3 +49,13 @@ __IMPORTANTE__: Toda vez que altero a propriedade ou estado de um componente a f
 
 Todo componente do react tem uma fila de alterações que tem que realizar dentro do estado.
 Conforme ele cresce isso pode ficar lento e a fila demorar para processar
+
+setState assincrono: já pego o resultado atualizado em função de callback
+
+## Stateful vs Stateless
+
+Stateful: componentes com estado
+Stateless: componentes sem estado
+
+Componentes stateless não da para fazer exports default, que o React não deixa. Deve fazer uma constante.
+Com isso componente fica com sintaxe de função
