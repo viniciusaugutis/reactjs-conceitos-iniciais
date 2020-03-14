@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import Button from './Button';
 
+import './style.scss';
+
 //componente com sintaxe de classe: Stateful component
 
 class App extends Component {

@@ -7,7 +7,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public')
+    contentBase: path.resolve(__dirname, 'public'),
   },
   module: {
     rules: [
@@ -17,6 +17,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.scss$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' },
+        { loader: 'sass-loader' }],
       },
     ],
   },

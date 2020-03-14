@@ -61,4 +61,16 @@ Componentes stateless não da para fazer exports default, que o React não deixa
 Com isso componente fica com sintaxe de função
 
 
-## Métodos do ciclo de vida do React
+## CSS
+
+Javascript importa arquivo css no ReactJs
+
+yarn add -D style-loader css-loader 
+
+Com isso, webpack faz com que arquivo css seja lido dentro do componente e no arquivo .JS
+
+css-loader faz isso.
+
+Com less usamos:
+
+yarn add -D sass-loader node-sass
