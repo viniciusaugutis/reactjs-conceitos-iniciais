@@ -19,3 +19,6 @@ A maioria dos componentes do React são classes e que ela extende a classe padr�
 Metodo render tem por obligação retornando o conteúdo em JSX para o componente.
 
 No react não pode ter dois componentes sem ter uma div por fora
+
+Propriedades: informações que são passadas entre componentes (this.props.nomePropriedade)
+Children: Pega toda informação que está dentro do componente e repassa: (this.props.children)
