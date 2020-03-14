@@ -1,0 +1,4 @@
+yarn add react react-dom
+yarn add -D @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli
+
+yarn add -D webpack-dev-server //automatizar server do webpack
