@@ -1,0 +1,21 @@
+## Init do projeto
+
+yarn init -y
+yarn add react react-dom
+yarn add -D @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli
+
+Criação do arquivo .babelrc, .prettierc e webpack.config.js
+
+yarn add -D webpack-dev-server //automatizar server do webpack
+
+Tudo no react é um componente
+
+## Definições
+
+Tudo no react é um componente
+
+A maioria dos componentes do React são classes e que ela extende a classe padrão do React de componente
+
+Metodo render tem por obligação retornando o conteúdo em JSX para o componente.
+
+No react não pode ter dois componentes sem ter uma div por fora
